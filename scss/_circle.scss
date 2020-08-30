@@ -1,0 +1,15 @@
+/* Example: .circle { @include circle(200px, #999); } */
+
+@mixin circle($size, $color, $display, $zindex: 0)
+{
+  background: $color;
+  display: $display;
+  height: $size;
+  line-height: $size;
+  width: $size;
+  z-index: $zindex;
+
+  border-radius: $size/2;
+  -webkit-border-radius: $size/2;
+  -moz-border-radius: $size/2;
+}

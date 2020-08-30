@@ -1,0 +1,5 @@
+@mixin line($width, $color, $type, $zindex: 0)
+{
+  border-left: $width $type $color;
+  z-index: $zindex;
+}
